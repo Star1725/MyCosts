@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">MyCosts</string>
+    <string name="OrderActivity_name">Настройки</string>
+    <string name="menu_item_create_order">Настройки:</string>
+    <string name="menu_item_show_date">Дата:</string>
+    <string name="menu_item_show_calendar">Дата:</string>
+
+    <string name="redactor_tab">Список</string>
+    <string name="redactor_tv_show_current_date">текущая дата</string>
+    <string name="redactor_tv_shopping_list">Список покупок:</string>
+    <string name="redactor_button_add_buy">Добавить</string>
+    <string name="redactor_button_del_buy">Удалить</string>
+    <string name="redactor_button_update_buy">Редактировать</string>
+    <string name="redactor_tv_category_list">Список категорий:</string>
+    <string name="redactor_button_add_caregory">Добавить</string>
+    <string name="redactor_button_del_caregory">Удалить</string>
+    <string name="redactor_button_update_caregory">Редактировать</string>
+
+    <string name="costs_tab">Расходы</string>
+    <string name="costs_tv_titel_all">Общие траты</string>
+    <string name="costs_tv_titel_eat">Еда</string>
+    <string name="costs_tv_titel_house">Дом, квартира</string>
+    <string name="costs_tv_titel_transport">Транспорт</string>
+    <string name="costs_tv_titel_ivent">Досуг</string>
+    <string name="costs_tv_titel_medical">Медицина</string>
+    <string name="costs_tv_titel_other">Другое</string>
+
+    <string name="costs_tv_percent">Проц.</string>
+    <string name="costs_tv_current_max">текущие/максим.</string>
+
+
+
+
+    <string name="seting_tab">Установки</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="the_corrent_date">Дата:</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="textView_in_dialog">Выберите категорию покупки</string>
+    <string name="fragmentSeting_titel">Настройки</string>
+    <string name="enter_costsAllMax">макс. общ. траты</string>
+    <string name="enter_costsAll">тек. общ. траты</string>
+    <string name="enter_costsEATMax">макс. траты на еду</string>
+    <string name="enter_costsEAT">траты на еду</string>
+    <string name="enter_costsHouseMax">макс. траты на дом</string>
+    <string name="enter_costsHouse">траты на дом</string>
+    <string name="enter_costsTransportMax">макс. траты на транс.</string>
+    <string name="enter_costsTransport">траты на транс.</string>
+    <string name="button_submit">Применить</string>
+    <string name="buttonOk">OK</string>
+    <string name="buttonCancel">Отмена</string>
+    <string name="textView_current_max">0/0</string>
+    <string name="textView_not_set_max">макс. траты = 0</string>
+    <string name="statistic_tab">Статистика</string>
+    <string name="rub">р</string>
+    <string name="actv_hint_ru">введите категорию</string>
+    <string name="Titel_for_ct_menu_change_name_category">Изменить имя категории</string>
+    <string name="Titel_for_ct_menu_set_max_cost_in_week">Установить макс. траты в неделю</string>
+    <string name="Titel_for_ct_menu_set_max_cost_in_month">Установить макс. траты в месяц</string>
+    <string name="Titel_for_ct_menu_set_max_cost_in_year">Установить макс. траты в год</string>
+    <string name="textView_category_buying">категория</string>
+    <string name="textView_category_id">id</string>
+    <string name="graph1">Graph1</string>
+    <string name="default_period">Период по умолчанию -</string>
+
+
+</resources>

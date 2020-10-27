@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mycost_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDFDFD"
+    tools:context=".MainActivity">
+
+    <Spinner
+        android:id="@+id/spiner_period"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:scrollbarStyle="outsideInset"
+        android:spinnerMode="dropdown"
+        android:textAlignment="center"
+        android:verticalScrollbarPosition="right"
+        app:layout_constraintBottom_toTopOf="@+id/textView_Titel_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </Spinner>
+
+    <TextView
+        android:id="@+id/textView_Titel_0"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/costs_tv_titel_all"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_percent_0"
+        app:layout_constraintStart_toStartOf="@+id/textView_percent_0"
+        app:layout_constraintTop_toTopOf="@+id/textView_percent_0" />
+
+    <TextView
+        android:id="@+id/textView_Titel_1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="bottom"
+        android:text="@string/costs_tv_titel_eat"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_percent_1"
+        app:layout_constraintStart_toStartOf="@+id/textView_percent_1"
+        app:layout_constraintTop_toTopOf="@+id/textView_percent_1" />
+
+    <TextView
+        android:id="@+id/textView_Titel_2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="bottom"
+        android:text="@string/costs_tv_titel_house"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_percent_2"
+        app:layout_constraintStart_toStartOf="@+id/textView_percent_2"
+        app:layout_constraintTop_toTopOf="@+id/textView_percent_2" />
+
+    <TextView
+        android:id="@+id/textView_Titel_3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/costs_tv_titel_ivent"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_percent_3"
+        app:layout_constraintStart_toStartOf="@+id/textView_percent_3"
+        app:layout_constraintTop_toTopOf="@+id/textView_percent_3" />
+
+    <TextView
+        android:id="@+id/textView_Titel_4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="bottom"
+        android:text="@string/costs_tv_titel_transport"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_percent_4"
+        app:layout_constraintStart_toStartOf="@+id/textView_percent_4"
+        app:layout_constraintTop_toTopOf="@+id/textView_percent_4" />
+
+    <TextView
+        android:id="@+id/textView_Titel_5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/costs_tv_titel_medical"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_percent_5"
+        app:layout_constraintStart_toStartOf="@+id/textView_percent_5"
+        app:layout_constraintTop_toTopOf="@+id/textView_percent_5" />
+
+    <TextView
+        android:id="@+id/textView_Titel_6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/costs_tv_titel_other"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_percent_6"
+        app:layout_constraintStart_toStartOf="@+id/textView_percent_6"
+        app:layout_constraintTop_toTopOf="@+id/textView_percent_6" />
+
+    <ProgressBar
+
+        android:id="@+id/circularProgressbar_0"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentEnd="true"
+        android:indeterminate="false"
+        android:max="1000"
+        android:progress="500"
+        android:progressDrawable="@drawable/circular"
+        android:secondaryProgress="1000"
+        app:layout_constraintBottom_toTopOf="@+id/textView_current_max_0"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="@+id/textView_percent_0"
+        app:layout_constraintStart_toStartOf="@+id/textView_percent_0"
+        app:layout_constraintTop_toBottomOf="@+id/textView_Titel_0" />
+
+    <ProgressBar
+
+        android:id="@+id/circularProgressbar_1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentEnd="true"
+        android:indeterminate="false"
+        android:max="1000"
+        android:progress="500"
+        android:progressDrawable="@drawable/circular"
+        android:secondaryProgress="1000"
+        app:layout_constraintBottom_toTopOf="@+id/textView_current_max_1"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="@+id/textView_percent_1"
+        app:layout_constraintStart_toStartOf="@+id/textView_percent_1"
+        app:layout_constraintTop_toBottomOf="@+id/textView_Titel_1" />
+
+    <ProgressBar
+
+        android:id="@+id/circularProgressbar_2"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentEnd="true"
+        android:indeterminate="false"
+        android:max="1000"
+        android:progress="500"
+        android:progressDrawable="@drawable/circular"
+        android:secondaryProgress="1000"
+        app:layout_constraintBottom_toTopOf="@+id/textView_current_max_2"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="@+id/textView_percent_2"
+        app:layout_constraintStart_toStartOf="@+id/textView_percent_2"
+        app:layout_constraintTop_toBottomOf="@+id/textView_Titel_2" />
+
+    <ProgressBar
+
+        android:id="@+id/circularProgressbar_3"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:indeterminate="false"
+        android:max="1000"
+        android:progress="500"
+        android:progressDrawable="@drawable/circular"
+        android:secondaryProgress="1000"
+        app:layout_constraintBottom_toTopOf="@+id/textView_current_max_3"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="@+id/textView_percent_3"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="@+id/textView_percent_3"
+        app:layout_constraintTop_toBottomOf="@+id/textView_Titel_3" />
+
+    <ProgressBar
+
+        android:id="@+id/circularProgressbar_4"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentEnd="true"
+        android:indeterminate="false"
+        android:max="1000"
+        android:progress="500"
+        android:progressDrawable="@drawable/circular"
+        android:secondaryProgress="1000"
+        app:layout_constraintBottom_toTopOf="@+id/textView_current_max_4"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="@+id/textView_percent_4"
+        app:layout_constraintStart_toStartOf="@+id/textView_percent_4"
+        app:layout_constraintTop_toBottomOf="@+id/textView_Titel_4" />
+
+    <ProgressBar
+
+        android:id="@+id/circularProgressbar_5"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:indeterminate="false"
+        android:max="1000"
+        android:progress="500"
+        android:progressDrawable="@drawable/circular"
+        android:secondaryProgress="1000"
+        app:layout_constraintBottom_toTopOf="@+id/textView_current_max_5"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="@+id/textView_percent_5"
+        app:layout_constraintStart_toStartOf="@+id/textView_percent_5"
+        app:layout_constraintTop_toBottomOf="@+id/textView_Titel_5" />
+
+    <ProgressBar
+
+        android:id="@+id/circularProgressbar_6"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:indeterminate="false"
+        android:max="1000"
+        android:progress="500"
+        android:progressDrawable="@drawable/circular"
+        android:secondaryProgress="1000"
+        app:layout_constraintBottom_toTopOf="@+id/textView_current_max_6"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="@+id/textView_percent_6"
+        app:layout_constraintStart_toStartOf="@+id/textView_percent_6"
+        app:layout_constraintTop_toBottomOf="@+id/textView_Titel_6" />
+
+    <TextView
+        android:id="@+id/textView_percent_0"
+        android:layout_width="240dp"
+        android:layout_height="0dp"
+        android:layout_alignStart="@id/circularProgressbar_1"
+        android:layout_alignTop="@id/circularProgressbar_1"
+        android:layout_alignEnd="@id/circularProgressbar_1"
+        android:layout_alignBottom="@id/circularProgressbar_1"
+        android:gravity="center"
+        android:hint="@string/costs_tv_percent"
+        android:text="@string/textView_current_max"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView_percent_5"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_percent_2" />
+
+    <TextView
+        android:id="@+id/textView_percent_1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:hint="@string/costs_tv_percent"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_percent_2"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/textView_percent_2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView_percent_2" />
+
+    <TextView
+        android:id="@+id/textView_percent_2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:hint="@string/costs_tv_percent"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="14sp"
+        app:autoSizeTextType="none"
+        app:layout_constraintBottom_toTopOf="@+id/textView_percent_0"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/textView_percent_3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView_percent_1"
+        app:layout_constraintTop_toBottomOf="@+id/spiner_period" />
+
+    <TextView
+        android:id="@+id/textView_percent_3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:hint="@string/costs_tv_percent"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_percent_2"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView_percent_2"
+        app:layout_constraintTop_toTopOf="@+id/textView_percent_2" />
+
+    <TextView
+        android:id="@+id/textView_percent_4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:hint="@string/costs_tv_percent"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_percent_5"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/textView_percent_5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_percent_5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:hint="@string/costs_tv_percent"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/textView_percent_6"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView_percent_4"
+        app:layout_constraintTop_toBottomOf="@+id/textView_percent_0" />
+
+    <TextView
+        android:id="@+id/textView_percent_6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:hint="@string/costs_tv_percent"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_percent_5"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView_percent_5" />
+
+    <TextView
+        android:id="@+id/textView_current_max_0"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:hint="@string/costs_tv_current_max"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_percent_0"
+        app:layout_constraintEnd_toEndOf="@+id/textView_percent_0"
+        app:layout_constraintStart_toStartOf="@+id/textView_percent_0" />
+
+    <TextView
+        android:id="@+id/textView_current_max_1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:hint="@string/costs_tv_current_max"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_percent_1"
+        app:layout_constraintEnd_toEndOf="@+id/textView_percent_1"
+        app:layout_constraintStart_toStartOf="@+id/textView_percent_1" />
+
+    <TextView
+        android:id="@+id/textView_current_max_2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:hint="@string/costs_tv_current_max"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_percent_2"
+        app:layout_constraintEnd_toEndOf="@+id/textView_percent_2"
+        app:layout_constraintStart_toStartOf="@+id/textView_percent_2" />
+
+    <TextView
+        android:id="@+id/textView_current_max_3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:hint="@string/costs_tv_current_max"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_percent_3"
+        app:layout_constraintEnd_toEndOf="@+id/textView_percent_3"
+        app:layout_constraintStart_toStartOf="@+id/textView_percent_3" />
+
+    <TextView
+        android:id="@+id/textView_current_max_4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:hint="@string/costs_tv_current_max"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_percent_4"
+        app:layout_constraintEnd_toEndOf="@+id/textView_percent_4"
+        app:layout_constraintStart_toStartOf="@+id/textView_percent_4" />
+
+    <TextView
+        android:id="@+id/textView_current_max_5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:hint="@string/costs_tv_current_max"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_percent_5"
+        app:layout_constraintEnd_toEndOf="@+id/textView_percent_5"
+        app:layout_constraintStart_toStartOf="@+id/textView_percent_5" />
+
+    <TextView
+        android:id="@+id/textView_current_max_6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:hint="@string/costs_tv_current_max"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_percent_6"
+        app:layout_constraintEnd_toEndOf="@+id/textView_percent_6"
+        app:layout_constraintHorizontal_bias="0.564"
+        app:layout_constraintStart_toStartOf="@+id/textView_percent_6" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/ct_menu_change_name_category"
+        android:title="@string/Titel_for_ct_menu_change_name_category" />
+    <item
+        android:id="@+id/ct_menu_set_max_cost_in_week"
+        android:title="@string/Titel_for_ct_menu_set_max_cost_in_week" />
+    <item
+        android:id="@+id/ct_menu_set_max_cost_in_month"
+        android:title="@string/Titel_for_ct_menu_set_max_cost_in_month" />
+    <item
+        android:id="@+id/ct_menu_set_max_cost_in_year"
+        android:title="@string/Titel_for_ct_menu_set_max_cost_in_year" />
+</menu>
